@@ -1,3 +1,4 @@
+import CardWidge from '../CardWidget/CardWidge'
 import './NavBar.css'
 
 const NavBar = () => {
@@ -8,6 +9,7 @@ const NavBar = () => {
             <li><a href="#">Perfumes</a></li>
             <li><a href="#">Relojes</a></li>
             <li><a href="#">Contacto</a></li>
+            <CardWidge/>
         </ul>
     </div>
   )
