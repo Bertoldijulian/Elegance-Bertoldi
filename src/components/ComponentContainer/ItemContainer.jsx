@@ -1,5 +1,8 @@
-import { useEffect } from "react";
+
 import { useState } from "react"
+import ItemList from "./ItemList";
+
+
 
 const ItemContainer = () => {
     const [inicial, setInicial] = useState (1)
@@ -19,16 +22,28 @@ const ItemContainer = () => {
       SetComprar(!comprar)
       console.log(inicial)
     }
+
+
+
   
     return (
-        <>
-        <button onClick={handleClick}> + </button>
-        <button onClick={restaCount}> - </button>
-        <p> Total: {inicial}</p>
-        <br />
-        <button onClick={handleComprar}> Agregar al Carrito </button>
-        </>
+        <div>
+          <>
+            <ItemList />
+          </>
+          <>
+          <button onClick={handleClick}> + </button>
+          <button onClick={restaCount}> - </button>
+          <p> Total: {inicial}</p>
+          <br />
+          <button onClick={handleComprar}> Agregar al Carrito </button>
+          </>
+        </div>
+        
   )
 }
+
+
+
 
 export default ItemContainer

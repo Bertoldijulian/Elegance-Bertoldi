@@ -9,7 +9,7 @@ const ComponentContainer = () => {
 
   return (
     <>
-        <Titulo titulo='Bienvenidos a Elegance'/>
+        <Titulo titulo='SOY VUELA'/>
         <ItemContainer />
     </>
   )
