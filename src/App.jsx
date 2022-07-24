@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 import NavBar from './components/Navbar/NavBar'
 import ComponentContainer from './components/ComponentContainer/ComponentContainer'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 

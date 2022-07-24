@@ -2,7 +2,7 @@ import './CardWidge.css'
 
 const CardWidge = () => {
   return (
-    <div class="img">
+    <div className="img">
         <img src="../../Multimedia/img/shopIcon1.png" alt="#" />
     </div>
   )
