@@ -14,9 +14,10 @@ const ItemListContainer = () => {
         .catch(err => console.log(err))
         .finally(() => console.log('finally'))
     }, [])
-    
+
     console.log(calleras)
 
+    
     const onAgregar = (total) => {
         console.log(`Compro ${total} productos`)
     }

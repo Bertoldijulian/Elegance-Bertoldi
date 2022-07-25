@@ -3,28 +3,25 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
+const ItemDetail = ({remeras}) => {
 
-const Item = ({calls}) => {
+
   return (
     <>
-
-    <Card border="dark" style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={calls.img}/>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={remeras.img}/>
       <Card.Body>
-        <Card.Title>{calls.articulo}</Card.Title>
+        <Card.Title>{remeras.articulo}</Card.Title>
         <Card.Text>
-          ${calls.precio}
+          ${remeras.precio}
         </Card.Text>
-        <Link to={`/detalle/${calls.id}`} className='ms-2  me-1'>
+        <Link to={`/remeras/${remeras.id}`} className='ms-2  me-1'>
           <Button variant="primary">Mas Detalles</Button>
         </Link>
-        
       </Card.Body>
     </Card>
-     
     </>
-
   )
 }
 
-export default Item
+export default ItemDetail

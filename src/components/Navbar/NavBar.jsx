@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import CardWidge from '../CardWidget/CardWidge'
 import Logo from '../Logo/Logo'
 import './NavBar.css'
@@ -9,15 +10,17 @@ const NavBar = () => {
   return (
   
   <>
-    <Logo/>
+    <Link to='/'>
+      <Logo/>
+    </Link>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">CALLERAS Y POUCH</Nav.Link>
-            <Nav.Link href="#features">CALZAS</Nav.Link>
-            <Nav.Link href="#pricing">REMERAS</Nav.Link>
+            <Link to='/callerasypouch'>CALLERAS Y POUCH</Link>
+            <Link to='/calzas'>CALZAS</Link>
+            <Link to='/remeras'>REMERAS</Link>
           </Nav>
         </Navbar.Collapse>
         <CardWidge/>
